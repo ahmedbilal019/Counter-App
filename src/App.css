@@ -1,0 +1,79 @@
+.root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  margin: auto;
+  background: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainheading {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: blue;
+  color: white;
+}
+.counter-card {
+  margin-top: 45px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.count-value {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+.counter-controls {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.counter-controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+}
+button#increment {
+  background-color: green;
+}
+button#increment:hover {
+  cursor: pointer;
+  background-color: rgb(32, 182, 32);
+}
+button#decrement {
+  background-color: rgb(40, 153, 153);
+}
+button#decrement:hover {
+  cursor: pointer;
+  background-color: rgb(41, 185, 233);
+}
+button#reset {
+  background-color: red;
+}
+button#reset:hover {
+  cursor: pointer;
+  background-color: rgb(243, 74, 74);
+}
+@media screen and (max-width: 480px) {
+  .counter-controls {
+    display: flex;
+    flex-direction: column;
+  }
+  .count-value {
+    font-size: 25px;
+  }
+}
