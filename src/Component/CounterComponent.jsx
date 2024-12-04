@@ -16,7 +16,15 @@ function CounterComponent() {
         </button>
         <button
           id="decrement"
-          onClick={() => setCount((prevCount) => prevCount - 1)}
+          onClick={() =>
+            setCount((prevCount) => {
+              if (prevCount > 0) {
+                return prevCount - 1;
+              } else {
+                return prevCount;
+              }
+            })
+          }
         >
           Decrement Counter
         </button>
